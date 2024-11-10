@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/css_bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="./assets/css/estilos.css" rel="stylesheet">
+    <title>Practica de consolidacion 4</title>
+  </head>
+  <body onload="asignarEventos()">
+    <div class="container">
+      <div class="row bg-info">
+        <div class="col-6">
+          <label for="txtLeche" class="form-label">Leche $1000</label>
+          <input type="number" class="form-control" id="txtLeche">
+        </div>
+        <div class="col-6">
+          <label for="txtPan" class="form-label">Pan $2000</label>
+          <input type="number" class="form-control" id="txtPan"><br>
+        </div>
+        <div class="col-6">
+          <label for="txtQueso" class="form-label">Queso $1200</label>
+          <input type="number" class="form-control" id="txtQueso"><br>
+        </div>
+        <div class="col-6">
+          <label for="txtMermelada" class="form-label">Mermelada $890</label>
+          <input type="number" class="form-control" id="txtMermelada"><br>
+        </div>
+        <div class="col-6">
+          <label for="txtAzucar" class="form-label">Azucar $1300</label>
+          <input type="number" class="form-control" id="txtAzucar"><br>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-3">
+            <input class="btn btn-dark" type="button" id="btnCalcular" value="Calcular">
+          </div>
+          <div class="col-9">
+            <p><strong>Valor Final a Pagar:<span id="txtValorFinal">0</span></strong></p>
+            <h3><strong>Detalles de la Compra:</strong></h3>
+            <p id="prfDetalles"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/js_bootstrap/bootstrap.bundle.js"></script>
+    <script src="./assets/js/logica.js"></script>
+  </body>
+</html>
